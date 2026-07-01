@@ -3693,7 +3693,7 @@
                         <div class="summary-header">
                             <div>
                                 <div class="summary-title">Total Balance</div>
-                                <div class="balance-amount" id="totalBalance">$0.00</div>
+                                <div class="balance-amount" id="totalBalance">CN¥0.00</div>
                                 <div class="balance-change positive" id="balanceChange">
                                     <i class="fas fa-arrow-up"></i>
                                     <span>Loading...</span>
@@ -3723,7 +3723,7 @@
                                         <div class="account-type">Checking Account</div>
                                         <i class="fas fa-university" style="color: var(--primary-blue);"></i>
                                     </div>
-                                    <div class="account-balance" id="checkingBalance">$0.00</div>
+                                    <div class="account-balance" id="checkingBalance">CN¥0.00</div>
                                     <div class="account-number" id="checkingNumber">**** **** **** ••••</div>
                                     <div class="account-actions">
                                         <button class="card-btn" data-action="transfer" data-account="checking">
@@ -3743,7 +3743,7 @@
                                         <div class="account-type">Savings Account</div>
                                         <i class="fas fa-piggy-bank" style="color: var(--success-green);"></i>
                                     </div>
-                                    <div class="account-balance" id="savingsBalance">$0.00</div>
+                                    <div class="account-balance" id="savingsBalance">CN¥0.00</div>
                                     <div class="account-number" id="savingsNumber">**** **** **** ••••</div>
                                     <div class="account-actions">
                                         <button class="card-btn" data-action="transfer" data-account="savings">
@@ -3763,7 +3763,7 @@
                                         <div class="account-type">Investment Portfolio</div>
                                         <i class="fas fa-chart-line" style="color: var(--accent-gold);"></i>
                                     </div>
-                                    <div class="account-balance" id="investmentBalance">$0.00</div>
+                                    <div class="account-balance" id="investmentBalance">CN¥0.00</div>
                                     <div class="account-number" id="investmentType">IRA • Roth Account</div>
                                     <div class="account-actions">
                                         <button class="card-btn" data-action="invest" data-account="investment">
@@ -4781,7 +4781,7 @@
                 The funds will be available to the recipient within 1-2 business days.
             </p>
             
-            <div class="modal-amount" id="successAmount">$0.00</div>
+            <div class="modal-amount" id="successAmount">CN¥0.00</div>
             
             <div class="modal-details">
                 <div class="detail-item">
@@ -5859,21 +5859,21 @@ function navigateToTransfer(accountType) {
                             accountNumber: '•••• 5678',
                             fullNumber: '4500 1234 5678 9012',
                             type: 'checking',
-                            currency: 'USD'
+                            currency: 'CNY'
                         },
                         savings: {
                             balance: 0.00,
                             accountNumber: '•••• 9012',
                             fullNumber: '4500 9876 5432 1098',
                             type: 'savings',
-                            currency: 'USD'
+                            currency: 'CNY'
                         },
                         investment: {
                             balance: 0.00,
                             accountNumber: '•••• 3456',
                             type: 'investment',
                             portfolioType: 'IRA • Roth Account',
-                            currency: 'USD',
+                            currency: 'CNY',
                             ytdReturn: 5.2
                         }
                     }
@@ -8074,7 +8074,7 @@ function navigateToTransfer(accountType) {
         function formatCurrency(amount) {
             return new Intl.NumberFormat('en-US', {
                 style: 'currency',
-                currency: 'USD',
+                currency: 'CNY',
                 minimumFractionDigits: 2
             }).format(amount || 0);
         }
